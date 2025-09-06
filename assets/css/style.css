@@ -1,0 +1,44 @@
+
+/* colors */
+
+:root {
+  --color-primary: #15803D;
+  --color-btn: #FACC15;
+  --color-bg-main: #CFF0DC;
+  --color-bg-greener : #166534;
+  --color-bg-greenest: #14532D;
+  --color-bg-common: #f0fdf4;
+  --color-font-dark: #1F2937;
+}
+
+
+/* fonts */
+
+.inter-reg {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-semi {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.geist {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
