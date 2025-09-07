@@ -37,16 +37,104 @@
     </header>
 
     <main>
+        <!-- hero  -->
+        <section class="hero bg-[var(--color-bg-main)]">
+            <div class="hero__container w-full mx-auto flex flex-wrap md:flex-nowrap gap-5 justify-center items-end lg:items-center">
+                <div class="hero__left">
+                    <img class="w-full h-auto" src="assets/img/hero-leaf1.png" alt="left image">
+                </div>
 
-        <section>
+                <div class="hero__text text-center">
+                    <h1 class="inter-bold text-[var(--color-font-dark)] text-3xl lg:text-4xl">Plant a Tree, Grow a Future</h1>
+                    <p class="inter-reg text-[var(--color-font-dark)] text-base pt-3">Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
+                    <button class="btn btn-neutral bg-[var(--color-btn)] text-[var(--color-bg-greenest)] hover:bg-[var(--color-font-dark)] hover:text-white duration-300 text-[16px] rounded-full border-none inter-reg m-4">Plant a Tree</button>
+                </div>
+
+                <div class="hero__right">
+                    <img class="w-full h-auto" src="assets/img/hero-leaf2.png" alt="left right">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- choose tree  -->
+        <section class="tree">
 
         </section>
 
+        <!-- about  -->
+         <section class="about bg-[var(--color-bg-common)]">
+            <div class="about__container w-8/12 mx-auto py-[100px]">
+                <h3 class="text-center inter-semi text-3xl text-[var(--color-font-dark)]">About the Campaign</h3>
+
+                <div class="about__main flex flex-wrap justify-between items-center gap-7 pt-10">
+                    <div class="about__image md:flex-1">
+                        <img class="w-full h-auto" src="assets/img/about.png" alt="about image">
+                    </div>
+                    <div class="about__text md:flex-1">
+                        <p class="inter-reg text-base text-[var(--color-font-dark)]">
+                            Green Earth is a global tree plantation initiative dedicated to fighting 
+                            climate change. Since our start, we’ve planted over 500,000 trees worldwide. 
+                            By joining our campaign, you help restore forests, create habitats for wildlife, 
+                            and combat global warming.
+                        </p>
+
+                        <ul class="inter-reg text-base text-[var(--color-font-dark)] list-disc pl-10 pt-5">
+                            <li>Restoration of natural habitats</li>
+                            <li>Improvement of air quality</li>
+                            <li>Support for local communities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- impact  -->
+          <section class="impact bg-[var(--color-bg-main)] py-[100px]">
+            <div class="impact__container w-11/12 mx-auto">
+                <h3 class="inter-semi text-3xl text-center text-[var(--color-font-dark)]">Our Impact</h3>
+                <div class="impact__boxes flex flex-wrap justify-evenly items-center gap-10 text-center pt-10">
+                    <div class="box bg-white w-md rounded-md py-7 shadow-sm">
+                        <h1 class="geist-semi text-2xl text-[var(--color-primary)]">500K+</h1>
+                        <p class="geist text-sm text-[var(--color-font-dark)] pt-2">Trees planted</p>
+                    </div>
+                    <div class="box bg-white w-md rounded-md py-7 shadow-sm">
+                        <h1 class="geist-semi text-2xl text-[var(--color-primary)]">120+</h1>
+                        <p class="geist text-sm text-[var(--color-font-dark)] pt-2">Communities Involved</p>
+                    </div>
+                    <div class="box bg-white w-md rounded-md py-7 shadow-sm">
+                        <h1 class="geist-semi text-2xl text-[var(--color-primary)]">30+</h1>
+                        <p class="geist text-sm text-[var(--color-font-dark)] pt-2">Countries Reached</p>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- form  -->
+           <section class="form bg-[var(--color-bg-greener)] py-[100px]">
+            <div class="form__container max-w-2xl mx-auto">
+                <h1 class="text-center inter-semi text-3xl text-white">Plant a Tree Today</h1>
+                <form action="#" class="flex flex-col gap-5 justify-center items-center bg-[var(--color-primary)] rounded-xl p-10 m-10">
+                    <input class="w-full rounded-md h-10 pl-3 bg-white outline-[var(--color-btn)] border-none" type="text" name="name" id="name" placeholder="Your Name">
+                    <input class="w-full rounded-md h-10 pl-3 bg-white outline-[var(--color-btn)] border-none" type="email" name="email" id="email" placeholder="Your Email Address">
+                    <select class="bg-white border-none rounded-md w-full h-10 pl-3 text-gray-700 outline-[var(--color-btn)]" id="trees">
+                        <option value="" selected disabled>Number of Trees</option>
+                        <option value="5">5 trees for $5</option>
+                        <option value="10">12 trees for $10</option>
+                        <option value="15">18 trees for $15</option>
+                        <option value="20">25 trees for $20</option>
+                    </select>
+                    <button type="submit" class="btn w-full btn-neutral bg-[var(--color-btn)] text-[var(--color-bg-greenest)] hover:bg-[var(--color-font-dark)] hover:text-white duration-300 text-[16px] rounded-full border-none inter-reg">Donate Now</button>
+                </form>
+            </div>
+           </section>
     </main>
 
 
     <footer>
-
+        <div class="footer__container bg-[var(--color-bg-greenest)] py-5">
+            <p class="inter-reg text-base text-center text-white">© 2025 Green Earth. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <!-- custom js  -->
