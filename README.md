@@ -1,6 +1,6 @@
 # PH-B12A06 : HTML+CSS+TailwindCSS+DaisyUI+JavaScript with API Integration
 
-## Preview Link:
+## Preview Link: https://phb12a06.netlify.app/
 
 ---------------------------------------------------------------------------
 ## Questions & Answers
