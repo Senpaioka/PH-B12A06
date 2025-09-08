@@ -56,7 +56,6 @@
             </div>
         </section>
 
-
         <!-- choose tree  -->
         <section class="tree bg-[var(--color-bg-common)] py-[100px]">
             <div class="tree__container w-10/12 mx-auto">
@@ -74,6 +73,7 @@
                     <!-- tree cols  -->
                     <div id="loading-off" class="loading loading-dots loading-lg col-span-3 mx-auto"></div>
                     <div id="tree_collection" class="col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4">
+
                         <!-- <div class="tree__variant bg-white rounded-md p-3">
                             <img class="w-full h-auto rounded-md" src="assets/img/Rectangle 1.png" alt="tree image">
                             <h3 class="inter-semi text-sm text-[var(--color-font-dark)] py-3 cursor-pointer">Mango Tree</h3>
@@ -85,6 +85,23 @@
                             <button type="submit" class="btn w-full btn-neutral bg-[var(--color-primary)] text-white hover:bg-[var(--color-font-dark)] hover:text-white duration-300 text-[16px] rounded-full border-none inter-reg my-4">Add to Cart</button>
                         </div> -->
                     </div>
+
+                    <!-- modal -->
+                        <dialog id="plantModal" class="modal">
+                            <div class="modal-box w-auto">
+                                <h3 id="modalTitle" class="inter-bold text-2xl text-[var(--color-font-dark)]"></h3>
+                                <img id="modalImage" class="rounded-md w-full h-auto">
+                                <h3 id="modalCategory" class="inter-semi text-base text-[var(--color-primary)] pt-5"></h3>
+                                <h3 id="modalPrice" class="inter-semi text-base text-[var(--color-font-dark)]"></h3>
+                                <p id="modalDescription" class="inter-reg text-sm text-[var(--color-font-dark)] py-4"></p>
+                                <div class="modal-action">
+                                <form method="dialog">
+                                    <button class="btn btn-neutral">Close</button>
+                                      <!-- <button class="btn" onclick="document.getElementById('plantModal').close()">Close</button> -->
+                                </form>
+                                </div>
+                            </div>
+                        </dialog>
 
                     <!-- cart  -->
                     <div class="bg-white md:col-start-2 md:row-start-1 lg:col-start-5 lg:row-start-1 rounded-md p-3">

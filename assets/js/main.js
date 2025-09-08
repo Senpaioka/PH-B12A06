@@ -6,6 +6,7 @@ const trees = document.getElementById('tree_collection');
 const loader = document.getElementById('loading-off');
 const cart = document.getElementById('cart');
 const total_sum = document.getElementById('total_price');
+const x = document.getElementById("modalTitle")
 
 
 /* functionality */
@@ -67,7 +68,7 @@ const getTrees = async function(url){
            trees.innerHTML += `
             <div class="tree__variant bg-white rounded-md p-3">
                 <img class="w-full h-auto rounded-md" src="${info.image}" alt="${info.name}">
-                <h3 class="inter-semi text-sm text-[var(--color-font-dark)] py-3 cursor-pointer">${info.name}</h3>
+                <h3 class="plant__title inter-semi text-sm text-[var(--color-font-dark)] py-3 cursor-pointer" data-name="${info.name}" data-image="${info.image}" data-category="${info.category}" data-price="${info.price}" data-description="${info.description}">${info.name}</h3>
                 <p class="inter-reg text-xs text-[var(--color-font-dark)]">${info.description}</p>
                 <div class="flex justify-between items-center gap-4 mt-3">
                     <span class="geist-semi text-sm text-[var(--color-primary)] bg-[var(--color-bg-main)] rounded-full p-3">${info.category}</span>
@@ -77,6 +78,32 @@ const getTrees = async function(url){
             </div>
            `
         })
+
+
+        // Add event listener for plant titles (event delegation)
+        trees.addEventListener("click", (event) => {
+        if (event.target.classList.contains("plant__title")) {
+                        
+            const name = event.target.dataset.name;
+            const image = event.target.dataset.image;
+            const category = event.target.dataset.category;
+            const price = event.target.dataset.price;
+            const description = event.target.dataset.description;
+            // console.log(name)
+            // const description = event.target.dataset.description;
+
+            // Fill modal content
+            document.getElementById("modalTitle").innerText = name;
+            document.getElementById("modalImage").src = image;
+            document.getElementById("modalCategory").innerText = `Category: ${category}`;
+            document.getElementById("modalPrice").innerText = `Price: ৳${price}`;
+            document.getElementById("modalDescription").innerText = `Description: ${description}`;
+
+            // Show modal
+            document.getElementById("plantModal").showModal();
+        }
+        });
+
     }
     catch(error) {
         console.error(`Fetching error ${error}`)
