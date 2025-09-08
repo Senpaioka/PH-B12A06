@@ -56,3 +56,14 @@
   font-weight: 600;
   font-style: normal;
 }
+
+.active {
+  background-color: var(--color-bg-greenest);
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+#loading-off {
+  display: none;
+  color: var(--color-btn);
+}
